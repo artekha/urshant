@@ -1,0 +1,164 @@
+// ==================================================
+// Base-styles
+// ==================================================
+
+// Box-sizing
+// --------------------------------------------------
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+// Clearfix
+// --------------------------------------------------
+.clearfix::before,
+.clearfix::after {
+	content: ' ';
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+
+// Reset outlines
+// --------------------------------------------------
+a,
+select,
+input,
+textarea,
+button {
+	outline: none;
+} 
+
+// Body styles
+// --------------------------------------------------
+body {
+	font-family: $base-font-family;
+	font-size: $text-plain;
+	background: $base-bg;
+	color: $base-font-color;
+	line-height: $base-line-height;
+}
+
+// Text, links, Headdings
+// --------------------------------------------------
+
+// Paragraphs
+p {
+	margin: 0 0 16px 0;
+}
+
+// Links
+a {
+	color: $link-color;
+	text-decoration: underline
+	&:hover {
+		color: $link-color-hover;
+		text-decoration: none;
+	}
+	&:active {
+		color: $link-color-active;
+	}
+	&:visited {
+		color: $link-color-visited;
+	}
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 15px 0 0;
+	font-weight: $base-font-weight;
+}
+h1 {
+	margin: 25px 0 0;
+	font-size: $h1;
+}
+h2 {
+	margin: 20px 0 0;
+	font-size: $h2;
+}
+h3 {
+	margin: 15px 0 0;
+	font-size: $h3;
+}
+h4 {
+	font-size: $h4;
+}
+h5 {
+	font-size: $h5;
+}
+h6 {
+	font-size: $h6;
+}
+
+// Bold and Italics
+b,
+strong {
+  font-weight: 600;
+}
+em {
+  font-style: italic;
+}
+
+// Sub and Sup
+sub,
+sup,{
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+// Lists
+// --------------------------------------------------
+
+// Unordered, ordered lists
+ul, ol {
+	padding: 0 0 0 20px;
+	margin: 16px 0 32px;
+	li {
+    margin-bottom: 5px;
+  }
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+	margin-bottom: 0;
+}
+
+// Description Lists
+dl {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+dt,
+dd {
+	line-height: 24px;
+}
+dt {
+	font-weight: $base-font-weight;
+}
+dd {
+	margin-left: 0;
+}
+
+// Images
+// --------------------------------------------------
+figure {
+	margin: 0;
+}
+img {
+	vertical-align: middle;
+}

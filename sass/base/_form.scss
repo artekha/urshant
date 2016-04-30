@@ -1,0 +1,109 @@
+// ==================================================
+// Forms
+// ==================================================
+
+// Form, Fieldset, Legend, Input, Textarea
+form {
+  padding: 0;
+  margin: 0 0 20px;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: $text-large;
+  line-height: $form-line-height * 2;
+  border: 0;
+}
+label {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-size: $text-large;
+  line-height: $form-line-height * 2;
+}
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: $text-plain;
+  line-height: $form-line-height;
+  color: $base-font-color;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="phone"],
+input[type="date"],
+input[type="number"],
+input[type="search"],
+input[type="color"],
+textarea {  
+  display: block;
+  width: 100%;
+  border: 1px solid $form-border-base;
+  font-size: $text-plain;
+  line-height: $form-line-height;
+  color: $base-font-color;
+  background-color: $base-bg;
+  background-image: none;
+  margin-bottom: 10px;
+  height: 40px;
+  padding: 6px 12px;
+  &:focus {
+    border: 1px solid $form-border-active;
+  }
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: $base-bg;
+  border: 1px solid $form-border-base;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: block;
+  margin: 10px 0;
+}
+input[type="color"] {
+  width: 40px;
+  padding: 0 2px;
+}
+// Textarea
+textarea {
+  resize: none;
+  height: 100px;
+  padding: 12px 12px;
+  &:focus {
+    border: 1px solid $form-border-active;
+  }
+}
+// Disabled
+input[disabled],
+input[readonly],
+fieldset[disabled] input {
+  background: $form-input-disable;
+  border: 1px solid $form-border-disable;
+  opacity: 1;
+}
+input[disabled],
+fieldset[disabled] input {
+  cursor: not-allowed !important;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+// Placeholder
+::-webkit-input-placeholder { color: $form-placeholder; }
+:-moz-placeholder { color: $form-placeholder; }
+::-moz-placeholder { color: $form-placeholder; }
+:-ms-input-placeholder { color: $form-placeholder; }

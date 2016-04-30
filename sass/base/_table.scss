@@ -1,0 +1,32 @@
+// ==================================================
+// Tables
+// ==================================================
+
+// Default
+// --------------------------------------------------
+caption {
+	margin: 0;
+	padding: 8px 0;
+	text-align: left;
+	font-size: $table-font-size;
+	font-weight: $base-font-weight;
+}
+
+table {
+	font-size: $text-plain;
+	border-collapse: collapse;
+	border-spacing: 0;
+  width: 100%;
+  margin: 16px 0;
+	text-align: left;
+	thead,
+  tbody,
+  tfoot {
+    td,
+    th {
+      color: $base-font-color;
+      padding: 12px 8px;
+      border-bottom: 1px solid #ededed;
+    }
+  }
+}

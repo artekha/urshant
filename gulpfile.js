@@ -12,6 +12,7 @@ gulp.task('sass', function() {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(plumber())
 		.pipe(autoprefixer())
+		.pipe(concat('main.css'))
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(gulp.dest('css'));
 });

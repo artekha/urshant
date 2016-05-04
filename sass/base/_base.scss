@@ -52,22 +52,6 @@ p {
 	margin: 0 0 16px 0;
 }
 
-// Links
-a {
-	color: $link-color;
-	text-decoration: underline
-	&:hover {
-		color: $link-color-hover;
-		text-decoration: none;
-	}
-	&:active {
-		color: $link-color-active;
-	}
-	&:visited {
-		color: $link-color-visited;
-	}
-}
-
 // Headings
 h1,
 h2,

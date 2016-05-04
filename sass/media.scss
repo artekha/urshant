@@ -50,7 +50,7 @@
 	}
 	.header-rigistration-toggle {
 		color: transparent;
-		background: url('../img/sign_up.png') no-repeat right;
+		background: url('../img/sign_up.png') no-repeat center;
 	}
 	.header-rigistration-block {
 		top: 0;
@@ -87,6 +87,7 @@
 		left: 0;
 		height: 50px;
 		width: 50px;
+		z-index: 1000;
 		background-color: #c10000;
 		background-image: url('../img/arrow.png');
 		background-repeat: no-repeat;
@@ -125,12 +126,10 @@
 	.main-headline {
 		text-align: center;
 	}
-
 	.photo-bar {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-
 	}
 }

@@ -11,7 +11,6 @@
 		function showHideBlock(event) {
 			event.preventDefault();
 			menu.classList.toggle('hide' + hidePrefix);
-			body.classList.toggle('scroll');
 		}
 	}
 	showPopup('reg', '');
